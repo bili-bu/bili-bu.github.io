@@ -128,7 +128,6 @@ h4 {
   margin: 20px;
   padding: 20px;
   height: 380px;
-  /* width: 700px; */
   object-fit: cover;
   object-position: center 0px;
   filter: grayscale(70%);
