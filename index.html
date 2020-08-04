@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="remove.css">
+  <link rel="stylesheet" href="css/remove.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
   <title>Alexandra Galitzine</title>
 </head>
 
@@ -16,54 +15,80 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="intro">
       <h1>Alexandra Galitzine</h1>
-      <h2>Junior full stack software developer</h2>
+      <h2>Junior software engineer</h2>
+    </section>
+    <section class="biography">
+      <h3>About me</h3>
+      <div class="bio-flex">
+        <div class="bio-children">
+          <img src="./images/Alexandra-1770-5-cropped.jpg" class="profile" alt="Profile">
+        </div>
+        <div class="bio-children">
+          <p class="paragraph">My name is Alex and I am a recent graduate from the Software Engineering Immersive course at General Assembly. I am passionate about writing clean code and creating sleek applications.</p>   
+        </div>
+      </div>
     </section>
     <section class="skills">
-      <h3>About me</h3>
-      <p>My name is Alexandra Galitzine. I'm a student of the General Assembly Software Engineering Immersive program. I
-        am currently learning how to use HTML and CSS and am looking forward to starting on Javascript. Before this
-        course I was working as an Investor Relations professional for various financial companies in New York and
-        London. Prior to this I was working at Jebsen & Co in Hong Kong.</p>
-      <p> I was awarded a Bachelor's degree with cum laude in Asian studies & languages at the Catholic University of
-        Louvain-La-Neuve in Belgium, where I also completed a minor in Theology.</p>
-      <p>I am fluent in English, German, Russian, French and coversational in Mandarin.</p>
-      <p>My hobbies are reading, writing, knitting, traveling and coding.</p>
       <h3>Skills</h3>
       <div class="grid">
-        <div class="grid-item"><i class="devicon-html5-plain-wordmark"></i></div>
+        <div class="grid-item"><i class="devicon-apple-original"></i></div>
+        <div class="grid-item"><i class="devicon-babel-plain"></i></div>
+        <div class="grid-item"><i class="devicon-chrome-plain"></i></div>
         <div class="grid-item"><i class="devicon-css3-plain-wordmark"></i></div>
-        <div class="grid-item"><i class="devicon-javascript-plain"></i></div>
+        <div class="grid-item"><i class="devicon-devicon-plain"></i></div>
+        <div class="grid-item"><i class="devicon-django-plain"></i></div>
+        <div class="grid-item"><i class="devicon-express-original"></i></div>
+        <div class="grid-item"><i class="devicon-git-plain"></i></div>
         <div class="grid-item"><i class="devicon-github-plain"></i></div>
+        <div class="grid-item"><i class="devicon-google-plain"></i></div>
+        <div class="grid-item"><i class="devicon-heroku-original"></i></div>
+        <div class="grid-item"><i class="devicon-html5-plain-wordmark"></i></div>
+        <div class="grid-item"><i class="devicon-javascript-plain"></i></div>
+        <div class="grid-item"><i class="devicon-mongodb-plain"></i></div>
+        <div class="grid-item"><i class="devicon-npm-original-wordmark"></i></div>
+        <div class="grid-item"><i class="devicon-nodejs-plain"></i></div>
+        <div class="grid-item"><i class="devicon-postgresql-plain"></i></div>
         <div class="grid-item"><i class="devicon-python-plain"></i></div>
         <div class="grid-item"><i class="devicon-react-original"></i></div>
+        <div class="grid-item"><i class="devicon-sass-original"></i></div>
+        <div class="grid-item"><i class="devicon-slack-plain"></i></div>
+        <div class="grid-item"><i class="devicon-trello-plain"></i></div>
+        <div class="grid-item"><i class="devicon-visualstudio-plain"></i></div>
+        <div class="grid-item"><i class="devicon-webpack-plain"></i></div>
+        <div class="grid-item"><i class="devicon-yarn-plain"></i></div>
       </div>
     </section>
     <section class="projects">
       <h3>Projects</h3>
       <article>
-        <h4>1. Newsletter</h4>
-        <img src="./images/Newsletter.png" alt="Newsletter">
-        <p>I created a website for people to be able to subscribe to my newsletter.</p>
+        <h4>1. Princess Peach avoids her friends</h4>
+        <img src="./images/PP01.png" class="project" alt="Princess Peach avoids her friends">
+        <p>This was my first project at General Assembly. We were given the task to build a grid-based game. I used HTML and CSS as well as "plain vanilla" JavaScript to create the game. I chose to recreate the cult classic Frogger with a SuperMario theme.</p>
       </article>
       <article>
-        <h4>2. Blog</h4>
-        <img src="./images/Blog.png" alt="Blog">
-        <p>This is a blog created as part of the admissions interview.</p>
+        <h4>2. The Harry Potter Encyclopedia</h4>
+        <img src="./images/HP01.png" class="project" alt="The Harry Potter Encyclopedia">
+        <p>This was a hackathon-like pair-programming project to build a frontend React application that consumed a public API. My project partner and I decided to use a public API for Harry Potter to render a full encyclopedia of characters, spells and house information. We also created an interactive section in which a visitor to the website could be placed in a Hogwarts house by means of the sorting hat.</p>
       </article>
       <article>
-        <h4>3. Online shop</h4>
-        <img src="./images/Business.png" alt="Business">
-        <p>This brick and mortar tea store wanted an online presence.</p>
+        <h4>3. The Trivia Game</h4>
+        <img src="./images/TG03.png" class="project" alt="The Trivia Game">
+        <p>For the third project we were tasked to build our first full-stack application. We used React for the front-end and Django for the backend. We decided to design this application as a mobile phone application since we wanted our users to feel like they could play anytime and anywhere.</p>
+      </article>
+      <article>
+        <h4>4. Hello Code</h4>
+        <img src="./images/HC01.png" class="project" alt="Hello Code">
+        <p>For the fourth project, my classmates and I decided to create a chat app which connects coders within a community to help each other with questions on a language or framework. This was a full-stack application using React Hooks for the frontend components, Django for the backend architecture and Material UI for styling.</p>
       </article>
     </section>
   </main>
@@ -75,10 +100,10 @@
           <a href="mail-to:a.galitzine@gmail.com">Email</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/agalitzine/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/agalitzine/"><i class="devicon-linkedin-plain"></i></a>
         </li>
         <li>
-          <a href="https://github.com/bili-bu/">GitHub</a>
+          <a href="https://github.com/bili-bu/"><i class="devicon-github-plain"></i></a>
         </li>
       </ul>
     </nav>
