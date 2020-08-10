@@ -6,39 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/remove.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script src="app.js"></script>
   <title>Alexandra Galitzine</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#intro">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contact</a></li>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-links"><a href="#intro">Home</a></li>
+        <li class="navbar-links"><a href="#biography">About me</a></li>
+        <li class="navbar-links"><a href="#skills">Skills</a></li>
+        <li class="navbar-links"><a href="#projects">Projects</a></li>
+        <li class="navbar-links"><a href="#contacts">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="intro">
+
+    <section class="intro" id="intro">
       <h1>Alexandra Galitzine</h1>
-      <h2>Junior software engineer</h2>
+      <h2>Software Engineer</h2>
     </section>
-    <section class="biography">
+
+    <section class="biography" id="biography">
       <h3>About me</h3>
       <div class="bio-flex">
         <div class="bio-children">
-          <img src="./images/Alexandra-1770-5-cropped.jpg" class="profile" alt="Profile">
+          <img src="./images/Alexandra-1770-5-cropped.jpg" class="profile-picture" alt="Profile">
         </div>
         <div class="bio-children">
           <p class="paragraph">My name is Alex and I am a recent graduate from the Software Engineering Immersive course at General Assembly. I am passionate about writing clean code and creating sleek applications.</p>   
         </div>
       </div>
     </section>
-    <section class="skills">
+
+    <section class="skills" id="skills">
       <h3>Skills</h3>
       <div class="grid">
         <div class="grid-item"><i class="devicon-apple-original"></i></div>
@@ -68,51 +75,84 @@
         <div class="grid-item"><i class="devicon-yarn-plain"></i></div>
       </div>
     </section>
-    <section class="projects">
+    
+    <section class="projects" id="projects">
       <h3>Projects</h3>
-      <article>
-        <h4>1. Princess Peach avoids her friends</h4>
-        <img src="./images/PP01.png" class="project" alt="Princess Peach avoids her friends">
-        <p>This was my first project at General Assembly. We were given the task to build a grid-based game. I used HTML and CSS as well as "plain vanilla" JavaScript to create the game. I chose to recreate the cult classic Frogger with a SuperMario theme.</p>
-      </article>
-      <article>
-        <h4>2. The Harry Potter Encyclopedia</h4>
-        <img src="./images/HP01.png" class="project" alt="The Harry Potter Encyclopedia">
-        <p>This was a hackathon-like pair-programming project to build a frontend React application that consumed a public API. My project partner and I decided to use a public API for Harry Potter to render a full encyclopedia of characters, spells and house information. We also created an interactive section in which a visitor to the website could be placed in a Hogwarts house by means of the sorting hat.</p>
-      </article>
-      <article>
-        <h4>3. The Trivia Game</h4>
-        <img src="./images/TG01.png" class="project" alt="The Trivia Game">
-        <img src="./images/TG02.png" class="project" alt="The Trivia Game">
-        <img src="./images/TG03.png" class="project" alt="The Trivia Game">
-        <p>For the third project we were tasked to build our first full-stack application. We used React for the front-end and Django for the backend. We decided to design this application as a mobile phone application since we wanted our users to feel like they could play anytime and anywhere.</p>
-      </article>
-      <article>
-        <h4>4. Hello Code</h4>
-        <img src="./images/HC01.png" class="project" alt="Hello Code">
-        <img src="./images/HC02.png" class="project" alt="Hello Code">
-        <img src="./images/HC03.png" class="project" alt="Hello Code">
-        <img src="./images/HC04.png" class="project" alt="Hello Code">
-        <p>For the fourth project, my classmates and I decided to create a chat app which connects coders within a community to help each other with questions on a language or framework. This was a full-stack application using React Hooks for the frontend components, Django for the backend architecture and Material UI for styling.</p>
-      </article>
+      <div class="project-flex">
+        <div id="carousel">
+          <div class="carousel-article">
+              <h4>1. Princess Peach avoids her friends</h4>
+              <div class="picture-wrapper">
+                <img src="./images/PP01.png" class="project" alt="Princess Peach avoids her friends">
+              </div>
+              <p>We were given the task to build a grid-based game in HTML and CSS vanilla JavaScript. I chose to recreate the cult classic Frogger with a SuperMario theme.</p>
+          </div>
+          <div class="carousel-article">
+              <h4>2. The Harry Potter Encyclopedia</h4>
+              <div class="picture-wrapper">
+                <img src="./images/HP01.png" class="project" alt="The Harry Potter Encyclopedia">
+              </div>
+              <p>The result of a hackathon-like pair-programming project to build a frontend React application which consumed a public API. We decided to create a full encyclopedia of Harry Potter characters, spells and house information.</p>
+          </div>
+          <div class="carousel-article">
+              <h4>3. The Trivia Game</h4>
+              <div class="picture-wrapper">
+                <img src="./images/TG01.png" class="project" alt="The Trivia Game">
+                <img src="./images/TG02.png" class="project" alt="The Trivia Game">
+                <img src="./images/TG03.png" class="project" alt="The Trivia Game">
+              </div>
+              <p>This is a React and Django trivia game which we designed as a mobile first application.</p>
+          </div>
+          <div class="carousel-article">
+              <h4>4. Hello Code</h4>
+              <div class="picture-wrapper">
+                <img src="./images/HC01.png" class="project" alt="Hello Code">
+                <img src="./images/HC02.png" class="project" alt="Hello Code">
+                <img src="./images/HC03.png" class="project" alt="Hello Code">
+                <img src="./images/HC04.png" class="project" alt="Hello Code">
+              </div>
+              <p>For our last project we decided to create a chat app which connects software engineers. This was a full-stack application using React Hooks for the frontend components, Django for the backend architecture and Material UI for styling.</p>
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script type="text/javascript" src="slick/slick.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('#carousel').slick({
+              arrows: true,
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            })
+          })
+        </script>
+  
     </section>
+
   </main>
-  <footer>
+  <footer id="contacts">
     <h3>Contact details</h3>
-    <nav>
-      <ul>
-        <li>
-          <a href="mail-to:a.galitzine@gmail.com">Email</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/agalitzine/"><i class="devicon-linkedin-plain"></i></a>
-        </li>
-        <li>
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-links">
           <a href="https://github.com/bili-bu/"><i class="devicon-github-plain"></i></a>
+        </li>
+        <li class="footer-links">
+          <a href="mailto:a.galitzine@gmail.com"><i class="far fa-envelope"></i></a>
+        </li>
+        <li class="footer-links">
+          <a href="https://www.linkedin.com/in/agalitzine/"><i class="devicon-linkedin-plain"></i></a>
         </li>
       </ul>
     </nav>
     <h5> &copy; Alexandra Galitzine</h5>
+
+    <script src="https://kit.fontawesome.com/340592461a.js" crossorigin="anonymous"></script>
+    
   </footer>
 </body>
 
