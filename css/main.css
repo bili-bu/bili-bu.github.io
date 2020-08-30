@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #E2F5F5;
-  font-family: 'Karla', sans-serif;;
+  font-family: 'Karla', sans-serif;
+  padding: 20px 40px;
 }
 
 section {
@@ -18,7 +23,7 @@ section {
 p {
   text-align: center;
   line-height: 30px;
-  padding: 30px;
+  /* padding: 30px; */
   opacity: 0.7;
 }
 
@@ -65,6 +70,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  animation-delay: 2s;
 }
 
 .navbar-links {
@@ -90,6 +96,10 @@ a:hover {
   justify-content: flex-end;
   align-content: flex-end;
   height: 90vh;
+}
+
+h2.animate__animated {
+  animation-delay: 1s;
 }
 
 /* Biography */
@@ -138,24 +148,18 @@ a:hover {
   text-align: center;
 }
 
-i {
+#icon {
   display: inline-block;
   font-size: 40px;
 }
 
-i:hover {
+#icon:hover {
   color: #d17f14;
-}
-
-span {
-  display: none;
-  padding-top: 7px;
-  color: #252B4D;
 }
 
 /* Projects */
 
-.projects {
+#projects {
   height: 100vh;
 }
 
@@ -190,10 +194,12 @@ span {
   justify-content: center;
 }
 
-.project {
+img.project {
   max-height: 350px;
   margin: 15px 5px;
 }
+
+
 
 /* Footer */
 
@@ -217,4 +223,26 @@ footer {
 .footer-links {
   display: inline-block;
   padding: 10px; 
+}
+
+/* Back to top button */
+#back-button {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 5px;
+  font-size: 22px;
+  background-color: transparent;
+  color: #3db0bd;
+  cursor: pointer;
+  outline: none;
+  border: 1px;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-button:hover, #back-button:focus {
+  color: #d17f14;
 }
